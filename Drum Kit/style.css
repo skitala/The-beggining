@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  /* width: 100vw;
+  height: 100vh; */
+  margin: 0;
+  overflow: hidden;
+}
+
+img {
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: wrap;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  background-color: #571515;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  position: absolute;
+  transition: 0.2s ease;
+}
+.active {
+  transform: scale(1.2);
+  background-color: crimson;
+  color: #1d1d1d;
+}
+
+#bass {
+  margin-top: 75vh;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+#floor {
+  margin-top: 65vh;
+  margin-right: 25vw;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+#snare {
+  margin-top: 65vh;
+  margin-left: 30vw;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+#tom2 {
+  margin-top: 42vh;
+  margin-left: 21vw;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+#tom {
+  margin-top: 41vh;
+  margin-right: 10vw;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+#hihat {
+  margin-top: 67vh;
+  margin-left: 65vw;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+#ride {
+  margin-top: 56vh;
+  margin-right: 77vw;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 10px;
+}
