@@ -1,0 +1,76 @@
+body,
+html {
+  background-color: #1f1f1f;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: 100vw;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: yellowgreen;
+  position: absolute;
+  transition: 1s ease-in-out;
+  top: 5px;
+  left: 0px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /* margin-left: 400px; */
+  background-color: rgb(44, 44, 255);
+  justify-content: flex-end;
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  transition: 1s ease-in-out;
+}
+
+.triangle {
+  width: 0px;
+  height: 0px;
+  border-bottom: 100px solid crimson;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  bottom: 0px;
+  left: 5px;
+  position: absolute;
+  transition: 1s ease-in-out;
+}
+
+.square2 {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(128, 40, 40, 0.87);
+  position: absolute;
+  bottom: 5px;
+  right: 0px;
+  transition: 1s ease-in-out;
+}
+.aperion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  left: 44vw;
+  top: 37vh;
+  transform: rotate(45deg);
+  border-radius: 20px;
+  background-color: indigo;
+  transition: 1s ease-in;
+}
+.aperion:hover {
+  background-color: transparent;
+}
+.aperion:active {
+  transform: scale(1.2);
+  background-color: indigo;
+}
