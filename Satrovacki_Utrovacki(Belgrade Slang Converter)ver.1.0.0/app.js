@@ -25,9 +25,7 @@ function convertSatro() {
   let firstHalf = text.slice(0, Math.floor(text.length / 2));
   let secondHalf = text.slice(Math.floor(text.length / 2), text.length);
   let final = secondHalf.concat(firstHalf);
-  if (text == 'nato') {
-    final = 'TERRORIST';
-  }
+
   resultSatro.innerText = final;
 }
 
@@ -44,9 +42,7 @@ function convertUtro() {
     rest = text.slice(3, text.length);
   }
   let final = `u${rest} za ${prefix}nje`;
-  if (text == 'nato') {
-    final = 'TERRORIST';
-  }
+
   if (text.length > 0) {
     resultUtro.innerText = final;
   } else if (text.length < 4) {
