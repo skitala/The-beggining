@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+body {
+  background-color: rgb(184, 76, 76);
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  height: 400px;
+  text-align: center;
+  width: 450px;
+  background-color: rgb(216, 216, 216);
+  border-radius: 10px;
+  box-shadow: 15px 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+button {
+  width: 100px;
+  cursor: pointer;
+}
+
+.score {
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 50px;
+  top: 5vh;
+  text-align: center;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button:hover {
+  transition: 1s ease;
+  transform: scale(1.1);
+}
+
+.button:active {
+  transition: 0.2s ease;
+  transform: scale(0.9);
+}
+
+button#Rock {
+  background: url('images/rock.jpg') no-repeat;
+  background-size: 100%;
+  color: transparent;
+  width: 120px;
+  height: 80px;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+button#Paper {
+  background: url('images/paper.jpg') no-repeat;
+  background-size: 100%;
+  color: transparent;
+  width: 120px;
+  height: 80px;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+button#Scissors {
+  background: url('images/scissors.jpg') no-repeat;
+  background-size: 100%;
+  color: transparent;
+  width: 120px;
+  height: 80px;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
