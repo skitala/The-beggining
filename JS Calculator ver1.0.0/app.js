@@ -16,7 +16,7 @@ numButton.forEach((button) => {
       let afterSqrt = outputEl.textContent.slice(1, outputEl.textContent.length);
       let resultSqrt = Math.sqrt(afterSqrt);
       if (resultSqrt - Math.floor(resultSqrt) !== 0) {
-        resultSqrt = Math.sqrt(afterSqrt).toFixed(3);
+        outputEl.innerHTML = resultSqrt.toFixed(3);
       } else {
         outputEl.innerHTML = resultSqrt;
       }
