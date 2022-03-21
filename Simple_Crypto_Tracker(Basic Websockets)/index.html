@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Simple Crypto Tracker</title>
+  </head>
+  <body>
+    <div class="stock-container">
+      <button class="btc-btn" id="bitcoin-btn"><i class="fa-brands fa-bitcoin"></i></button>
+      <button class="eth-btn" id="eth-btn"><i class="fa-brands fa-ethereum"></i></button>
+      <button class="bin-btn" id="bin-btn">Binance</button>
+      <button class="xrp-btn" id="xrp-btn">XRP</button>
+      <h1 id="stock-price-eth" class="stock-price-eth hide"></h1>
+      <h1 id="stock-price-bnb" class="stock-price-bnb hide"></h1>
+      <h1 id="stock-price-btc" class="stock-price-btc hide"></h1>
+      <h1 id="stock-price-xrp" class="stock-price-xrp hide"></h1>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

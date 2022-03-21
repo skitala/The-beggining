@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #1d1d1d;
+  display: flex;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  transition: 1s ease-in-out;
+}
+
+.stock-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: transparent;
+  width: 800px;
+  height: 360px;
+  text-align: center;
+  border-radius: 10px;
+  top: 10%;
+  transition: 1s ease-in-out;
+}
+
+#stock-price-eth {
+  background-color: #fff;
+  width: 800px;
+  border-radius: 10px;
+  top: 0;
+}
+
+#stock-price-bnb {
+  background-color: #fff;
+  width: 800px;
+  border-radius: 10px;
+  transition: 1s ease-in-out;
+}
+
+#stock-price-btc {
+  background-color: #fff;
+  width: 800px;
+  border-radius: 10px;
+}
+#stock-price-xrp {
+  background-color: #fff;
+  width: 800px;
+  border-radius: 10px;
+}
+
+.stock-price-eth.hide {
+  display: none;
+}
+.stock-price-bnb.hide {
+  display: none;
+}
+.stock-price-btc.hide {
+  display: none;
+}
+.stock-price-xrp.hide {
+  display: none;
+}
+button {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  font-weight: bold;
+  transition: 0.1s ease-in-out;
+}
+button:hover {
+  background-color: transparent;
+  color: #fff;
+}
+button:active {
+  transform: scale(1.3);
+}
+i {
+  font-size: 2rem;
+}
+
+@media (max-width: 650px) {
+  .stock-container {
+    transform: scale(0.6);
+  }
+}
