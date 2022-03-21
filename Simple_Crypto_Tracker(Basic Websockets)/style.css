@@ -31,42 +31,50 @@ body {
   transition: 1s ease-in-out;
 }
 
-#stock-price-eth {
+.stock-price-eth {
   background-color: #fff;
   width: 800px;
   border-radius: 10px;
   top: 0;
+  transform: translateY(0%);
+  transition: 1s ease;
 }
 
-#stock-price-bnb {
+.stock-price-bnb {
   background-color: #fff;
   width: 800px;
   border-radius: 10px;
+  transform: translateY(0%);
+
   transition: 1s ease-in-out;
 }
 
-#stock-price-btc {
+.stock-price-btc {
   background-color: #fff;
   width: 800px;
   border-radius: 10px;
+  transform: translateY(0%);
+  transition: 1s ease-in-out;
 }
-#stock-price-xrp {
+.stock-price-xrp {
   background-color: #fff;
   width: 800px;
   border-radius: 10px;
+  transform: translateY(0%);
+  transition: 1s ease-in-out;
 }
 
 .stock-price-eth.hide {
-  display: none;
+  transform: translateX(150%);
 }
 .stock-price-bnb.hide {
-  display: none;
+  transform: translateX(-150%);
 }
 .stock-price-btc.hide {
-  display: none;
+  transform: translateX(-150%);
 }
 .stock-price-xrp.hide {
-  display: none;
+  transform: translateX(150%);
 }
 button {
   width: 70px;
