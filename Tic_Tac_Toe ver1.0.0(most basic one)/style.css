@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  background-color: #1d1d1d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+td {
+  background-color: aqua;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  text-align: center;
+  border: 2px solid black;
+  height: 150px;
+  width: 150px;
+  font-size: 6rem;
+  cursor: pointer;
+}
+
+.table-container {
+  display: flex;
+  transition: 1s ease-in;
+  width: 458px;
+  height: 458px;
+}
+
+.btn-container {
+  position: absolute;
+  top: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 200px;
+  height: 50px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background-color: transparent;
+  color: #fff;
+  box-shadow: 1px 1px 10px 3px aqua;
+  width: 45%;
+  height: 50px;
+  font-family: inherit;
+  font-weight: bolder;
+  font-size: 25px;
+  cursor: pointer;
+  border: none;
+}
+
+#o {
+  border-radius: 50%;
+}
+
+button:focus {
+  opacity: 0.5;
+}
+
+.player-result {
+  position: absolute;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  bottom: 10vh;
+}
+
+@media (max-height: 500px), (max-width: 500px) {
+  .table-container {
+    transform: scale(0.7);
+  }
+  .btn-container {
+    left: 70%;
+    transform: scale(0.7);
+  }
+}
