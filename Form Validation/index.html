@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form-validation" id="form-validation">
+        <p>Username:</p>
+        <span class="name-mess hide" id="name">Should contain minimum of 2 and maximum of 20 letters</span>
+        <input type="text" class="input" id="name-input" />
+        <p>Email:</p>
+        <span class="email-mess hide" id="email">Enter a valid email</span>
+        <input type="text" class="input" id="email-input" />
+        <p>Password:</p>
+        <span class="pass-mess hide" id="pass"
+          >Should contain minimum of 8 and maximum of 20 letters, numbers and symbols.</span
+        >
+
+        <input type="password" class="input" id="password-input" />
+
+        <button class="btn" id="submit-btn">Submit</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
