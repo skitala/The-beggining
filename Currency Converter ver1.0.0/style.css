@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: url('img/moneymoneymoney.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 4rem;
+}
+
+input {
+  border: 0;
+  background: transparent;
+  font-size: 30px;
+  text-align: right;
+  color: black;
+}
+.input:focus {
+  outline: none;
+}
+
+select {
+  width: 4rem;
+  height: 2rem;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  color: #fff;
+  font-size: 3rem;
+  box-shadow: 10px 2px 10px 10px #1d1d1d;
+  transition: 0.5s ease;
+}
+
+h1:hover {
+  transform: scale(1.1);
+}
