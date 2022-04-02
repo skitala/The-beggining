@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  transition: all 0.5s ease-in;
+}
+
+html.dark {
+  background-color: #fff;
+}
+body.dark {
+  background-color: #fff;
+}
+p.text.dark {
+  color: #1d1d1d;
+}
+
+body {
+  background-color: #1d1d1d;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin: 0;
+  transition: 0.5s ease;
+  overflow-x: hidden;
+}
+
+.nav {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+}
+
+ul {
+  position: fixed;
+  top: 10px;
+  left: 5px;
+  height: 60px;
+  width: 380px;
+  box-shadow: 1px 1px 10px 3px crimson;
+  border-radius: 10px;
+  list-style-type: none;
+  margin: 0;
+  background-color: #1d1d1d;
+  z-index: 1;
+}
+
+li {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.clock {
+  position: fixed;
+  left: 80%;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.clock.dark {
+  color: #1d1d1d;
+}
+
+i {
+  color: #fff;
+  font-size: 2rem;
+}
+
+i:hover {
+  color: crimson;
+}
+
+li a i {
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.toggle {
+  position: fixed;
+  background-color: #1d1d1d;
+  width: 50px;
+  height: 50px;
+  right: 5px;
+  border-radius: 50%;
+  margin-left: auto;
+  border: none;
+  cursor: pointer;
+}
+
+.text {
+  transition: 0.4s ease;
+}
+
+.toggle.dark {
+  background-color: #fff;
+}
+
+.toggle.dark i {
+  color: black;
+}
+
+.info {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 100px;
+  width: 90%;
+  height: 200px;
+}
+.info img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  margin-left: 20px;
+  transition: 1.5s ease;
+  filter: blur(53px);
+}
+#text {
+  color: #fff;
+  height: 200px;
+  margin-left: 100px;
+  margin-top: 70px;
+  transition: 1s ease;
+}
+
+.dice-game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  transition: 1.5s ease;
+  filter: blur(53px);
+}
+.dice-game .result {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  right: 25%;
+  font-size: 2rem;
+}
+
+.result.dark {
+  color: #1d1d1d;
+}
+
+.game-rule.dark {
+  color: #1d1d1d;
+}
+
+.dice-img {
+  width: 150px;
+  height: 150px;
+  background-image: url('img/dice.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 2s ease;
+}
+
+.dice-btn {
+  background-color: crimson;
+  border: none;
+  width: 150px;
+  height: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.dice-btn:active {
+  transform: scale(0.9);
+}
+
+@media (max-width: 600px) {
+  .info {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  ul {
+    transform: scale(0.6);
+    left: -10%;
+  }
+  .clock {
+    transform: scale(0.6);
+    left: 55%;
+  }
+  #text {
+    font-size: 14px;
+    margin-left: 70px;
+  }
+  .info img {
+    margin-left: 65px;
+  }
+  .dice-game {
+    position: absolute;
+    top: 130%;
+    justify-content: flex-start;
+  }
+  .result {
+    position: absolute;
+    left: 67%;
+    top: 50%;
+  }
+}
