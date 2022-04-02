@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  background-color: #1d1d1d;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.btn-container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  width: 100vw;
+  z-index: 1;
+}
+.clear-all {
+  font-weight: bold;
+  font-size: 1rem;
+}
+button {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.note {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border: 10px solid crimson;
+  width: 300px;
+  height: 200px;
+  left: 5%;
+  border-radius: 10px;
+  margin: 10px;
+  transition: 1s ease;
+}
+
+.note:hover {
+  transform: scale(1.1);
+}
+
+.note textarea {
+  width: 100%;
+  height: 80%;
+  border: none;
+}
+
+.note button {
+  position: relative;
+  margin: auto;
+  width: 35px;
+  height: 35px;
+}
+
+textarea {
+  font-size: 1.5rem;
+}
+
+textarea:focus {
+  outline: none;
+}
