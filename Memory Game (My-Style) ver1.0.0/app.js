@@ -70,7 +70,7 @@ const submitBtn = document.querySelector('.submit').addEventListener('click', ()
       progressBar.style.width = '100%';
       alert('You won! Great memory mate!');
       location.reload();
-    } else if (duplicateCheck[0] === duplicateCheck[1]) {
+    } else if (inputs[0] === inputs[1]) {
       alert('No Duplicates Cheater. Game Over!');
       progressBar.style.width = `${progressWidth}%`;
       location.reload();
