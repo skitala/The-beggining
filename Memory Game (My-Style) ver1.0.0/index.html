@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Memory Game</title>
+  </head>
+  <body>
+    <div class="game-container">
+      <h2 class="game-rule">Welcome to my memory game! Unlike other similar games where you are trying to find matching images, this one is a little bit different. You'll be presented with 10 words or numbers in 10 seconds. Your goal is to remember and write them down. Progress bar below will keep a track of successful attempts. Good luck! Don't let your memory degrade because of technology.</h2>
+      <button class="start" id="start">START</button>
+      <span class="random-elements" id="random-element"></span>
+      <input type="text" class="remembered-elements" id="remembered-elements" />
+      <button class="submit">SUBMIT</button>
+      <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+        <div class="circle">0</div>
+        <div class="circle">1</div>
+        <div class="circle">2</div>
+        <div class="circle">3</div>
+        <div class="circle">4</div>
+        <div class="circle">5</div>
+        <div class="circle">6</div>
+        <div class="circle">7</div>
+        <div class="circle">8</div>
+        <div class="circle">9</div>
+        <div class="circle">10</div>
+      </div>
+      <div class="attempts"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
