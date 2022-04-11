@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Typing Speed Test</title>
+  </head>
+  <body>
+    <div class="test-container">
+      <h1>Typing Speed Test!</h1>
+      <div class="stats">
+        <div class="words-per-minute">
+          <div class="stats-text">Words per minute:</div>
+          <div class="wpm">0</div>
+        </div>
+        <div class="char-per-minute">
+          <div class="stats-text">Characters per minute:</div>
+          <div class="cpm">0</div>
+        </div>
+        <div class="errors">
+          <div class="stats-text">Errors:</div>
+          <div class="err">0</div>
+        </div>
+        <div class="timer">
+          <div class="stats-text">Time:</div>
+          <div class="time-left">60s</div>
+        </div>
+        <div class="accuracy">
+          <div class="stats-text">Accuracy:</div>
+          <div class="acc">100</div>
+        </div>
+      </div>
+      <div class="test-text">Click to start a game.</div>
+
+      <textarea class="input-text" placeholder="Type here..."></textarea>
+
+      <button class="test-again">Test again</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
