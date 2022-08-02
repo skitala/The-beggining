@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Oleo Script Swash Caps', cursive;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.container {
+  /* position: absolute;
+  top: 50px; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100%;
+}
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 60%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.cocktail-container {
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  width: 90vw;
+  flex-direction: column;
+  font-family: inherit;
+  background-color: crimson;
+  transition: 1s ease;
+}
+.cocktail-container .ingredients:hover,
+.cocktail-name:hover,
+.instructions:hover {
+  transition: 1s ease;
+  cursor: pointer;
+  color: #fff;
+}
+.cocktail-container .cocktail-name {
+  margin: 15px;
+}
+.cocktail-container .ingredient {
+  font-size: 1.5rem;
+}
+.cocktail-container .instructions {
+  font-size: 1.5rem;
+}
+.cocktail-img img {
+  width: 250px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 10px;
+}
+.cocktail-card {
+  display: flex;
+  flex-direction: row;
+}
+.search-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+button {
+  cursor: pointer;
+  background-color: crimson;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  transition: 1s ease;
+}
+button:hover {
+  background-color: rebeccapurple;
+  transform: scale(1.1);
+}
+button:active {
+  background-color: crimson;
+  transform: scale(0.9);
+}
